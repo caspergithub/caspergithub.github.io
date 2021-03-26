@@ -13,7 +13,7 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-function myFunction() {
+function changeThemeColor() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 
