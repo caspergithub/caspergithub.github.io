@@ -1,10 +1,10 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
+        let panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
         } else {
@@ -14,16 +14,19 @@ for (i = 0; i < acc.length; i++) {
 }
 
 function changeThemeColor() {
-    var element = document.body;
+    let element = document.body;
     element.classList.toggle("dark-mode");
 
-    var accordion = document.getElementsByClassName("accordion");
+    let accordion = document.getElementsByClassName("accordion");
     for (let i = 0; i < accordion.length; i++) {
-        accordion[i].classList.toggle("dark-mode");
+        accordion[i].classList.toggle("accordion-dark-mode");
     }
 
-    var panel = document.getElementsByClassName("panel");
+    let panel = document.getElementsByClassName("panel");
     for (let i = 0; i < panel.length; i++) {
-        panel[i].classList.toggle("dark-mode");
+        panel[i].classList.toggle("panel-dark-mode");
     }
+
+    let footer = document.footer;
+    footer.classList.toggle("dark-mode");
 }
