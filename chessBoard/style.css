@@ -1,0 +1,54 @@
+/* html tags */
+
+* {
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+body {
+	margin: 0;
+	background-color: #111;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	color: #efefef;
+}
+
+/* ids */
+
+#board {
+	background-color: #ccc;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	width: 90vw;
+	max-width: 800px;
+	height: 90vw;
+	max-height: 800px;
+	border: 1px solid #ccc;
+}
+
+/* classes */
+
+.black,
+.white {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.black {
+	background-color: #222;
+	color: #fff;
+}
+
+.white {
+	background-color: #efefef;
+	color: #000;
+}
