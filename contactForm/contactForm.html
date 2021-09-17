@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Kontakt form</title>
+    <style>
+        .mw-800 {
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mw-800">
+        <h1 class="text-center my-5">Simpel kontakt form med bootstrap styling</h1>
+        <form class="row g-3 needs-validation" target="_blank" action="https://formsubmit.co/casper@punktum.gl"
+            method="POST">
+
+            <div class="col-md-6">
+                <label for="name">Fulde navn</label>
+                <input type="text" name="name" class="form-control" placeholder="Indtast dit fulde navn" required>
+
+            </div>
+
+            <div class="col-md-6">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="form-control" placeholder="Indtast din Email addresse" required>
+
+            </div>
+
+            <div class="col-12">
+                <label for="message">Besked</label>
+                <textarea placeholder="Indtast din besked" class="form-control" name="message" rows="5"
+                    required></textarea>
+
+            </div>
+
+            <input type="hidden" name="_subject" value="Ny besked fra den simple kontakt form">
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Send besked</button>
+
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
