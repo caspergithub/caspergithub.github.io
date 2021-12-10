@@ -13,16 +13,31 @@
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        .vertical-menu {
+          width: 200px;
+        }
+
+        .vertical-menu a {
+          background-color: #eee;
+          color: black;
+          display: block;
+          padding: 12px;
+          text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+          background-color: #ccc;
+        }
     </style>
 </head>
 
 <body>
     <h1>Projects</h1>
-    <ul>
-        <li><a href="/mealplan/meals.html">Meal plan site</a></li>
-        <li><a href="/chessBoard/chessBoard.html">Chess Board</a></li>
-        <li><a href="/contactForm/contactForm.html">Contact form</a></li>
-    </ul>
+    <div class="vertical-menu">
+        <a href="/mealplan/meals.html">Meal plan site</a>
+        <a href="/chessBoard/chessBoard.html">Chess Board</a>
+        <a href="/contactForm/contactForm.html">Contact form</a>
+    </div>
 </body>
 
 </html>
